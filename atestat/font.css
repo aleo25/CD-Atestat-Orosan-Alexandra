@@ -1,0 +1,31 @@
+
+.h1{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+}
+.container, .h2{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+  .container2{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+  .container1, .container3{
+        font-family: "Lato", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+  }
+  .p{
+    font-family: "Lato", serif;
+     font-weight: 400;
+     font-style: normal;
+  }
+

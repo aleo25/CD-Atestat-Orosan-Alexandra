@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="number" placeholder="numar1"/>
+        <input type="number" id="number" placeholder="numar2"/>
+        <button onclick="suma()"> suma</button>
+        <button onclick="scadere()"> scadere</button>
+        <button onclick="produs()"> produs</button>
+        <button onclick="impartire()"> impartire</button>
+        <p id="rezultat"></p>
+    </form>
+
+
+    <script>
+        function calculeaza(){
+            let numar1 = parseInt(document.getElementById("numar1").value);
+            let numar2 = parseInt(document.getElementById("numar2").value);
+            const rezultat = document.getElementById("rezultat")
+        }
+
+
+
+        function suma(a, b){
+            return a+b;
+        }
+        console.log("suma:", suma (a, b));
+        function scadere(a, b){
+            return a-b;
+        }
+        console.log("scadere:", scadere (a, b));
+        function produs(a, b){
+            return a*b;
+        }
+        console.log("produs:", produs (a, b));
+        function impartire(a, b){
+            return a/b;
+        }
+        console.log("impartire:", impartire (a, b));
+        
+
+
+
+    </script>
+</body>
+</html>

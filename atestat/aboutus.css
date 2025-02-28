@@ -1,0 +1,60 @@
+body{
+    color:white;
+}
+.h1{
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.container{
+    display: flex;
+    flex:1;
+    gap:545px;
+    margin-left: 80px;
+    margin-right: 60px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+.container1{
+    display: flex;
+    gap:40px;
+    flex:1;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-indent: 20px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+.container2{
+    display:flex;
+    flex:1;
+    gap:595px;
+    margin-left:80px ;
+    margin-right: 60px;
+    font-size:19px;
+    letter-spacing: 2px;
+
+}
+.container3{
+    display: flex;
+    flex:1;
+    line-height: 1.4;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap:175px;
+    font-size: 18px;
+}
+.h2{
+   
+    margin-left:80px ;
+    margin-right: 60px;
+    letter-spacing: 2px;
+
+}
+.p{
+    line-height: 1.4;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap:130px;
+    font-size: 18px;
+}
