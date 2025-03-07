@@ -1,15 +1,12 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#00011d;
-    
-
 }
 .nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#070707;
+    background-color:#8fadd4;
     padding: 30px;
     height: 10px;
     color:white;
