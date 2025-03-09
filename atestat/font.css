@@ -1,5 +1,5 @@
 
-.h1{
+.h1, .harta, .prod{
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight:400;
@@ -17,15 +17,16 @@
     font-weight:400;
     font-style: normal;
   }
-  .container1, .container3{
+  .container1, .container3, .rand1{
         font-family: "Lato", serif;
         font-weight: 400;
         font-style: normal;
       
   }
-  .p{
+  .p, .rand3, .volan{
     font-family: "Lato", serif;
      font-weight: 400;
      font-style: normal;
   }
+  
 

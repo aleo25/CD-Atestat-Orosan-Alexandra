@@ -1,0 +1,18 @@
+.p{
+    line-height: 1.4;
+    margin-left: 70px;
+    margin-right: 40px;
+    gap:130px;
+    font-size: 18px;
+}
+.harta{
+    text-indent: 70px;
+    letter-spacing: 4px;
+    font-size: 28px;
+    
+}
+.harta1{
+  display: flex;
+  justify-content: center;
+
+}

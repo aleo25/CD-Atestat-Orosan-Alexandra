@@ -1,9 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#00011d;
-    
-
+    background-color:#282628;
+    color:white;
 }
 .nav{
     display:flex;
@@ -38,4 +37,8 @@ body{
     display: flex;
    justify-content: end;
     gap:20px;
+}
+.a{
+    text-decoration: none;
+    color:black;
 }
