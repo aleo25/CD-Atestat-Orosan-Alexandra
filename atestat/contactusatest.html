@@ -6,75 +6,94 @@
     <title>Contact</title>
 </head>
 <link rel="stylesheet" href="navbar.css">
-<style>
-    .contact{
-        margin-left: 40px;
-    }
-</style>
+<link rel="stylesheet" href="contact.css">
+
 <body>
     <div class="nav">
-        
-
         <div class="link1">
-        <a href="./homeatest.html">home</a>
-       
+        <a href="./homeatest.html"> Acasa</a>
+        <a href="./produse.html">Produse</a>
         </div>
-
         <div class="link">
-            <a href="./homeatest.html" > <img  src=" hh " ></a>
+            <a href="./homeatest.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
         </div> 
-
         <div class="link2">
-        <a href="./produse.html">product</a>
-        <a href="./aboutusatest.html">about us</a>
-        <a href="./contactusatest.html"> contact us</a>
-       
-       </div>
-
-    </div>
-     
-    <h1 style="margin-left: 80px;">Ia legătura cu noi</h1>
-    
-
-<form name="submit-to-google-sheet">
-    <div class="contact">
-        <h3>Detalii personale</h3>
-        <input type="text" name="nume" placeholder=" Nume" required style="height: 20px; border-radius: 5px;">
-        <input type="text" name="prenume" placeholder="Prenume" required style="height: 20px;margin-left: 10px; border-radius: 5px;">
-        <h3>Detaliile adresei</h3>
-        <input type="text" name="oras" placeholder="Oraș" required style="height: 20px;border-radius: 5px;">
-        <h3>Detalii de contact</h3>
-        <p><table>
-            <tr>
-                <th style="text-align: left;border-radius: 5px;">Inserați număr telefon</th>
-                <th style="text-align: left; padding-left: 10px;border-radius: 5px;">Inserați email</th>
-            </tr>
-            <tr>
-                <td><input type="tel" name="telefon" placeholder="Număr de telefon" required style="height: 20px;border-radius: 5px;"></td>
-                <td><input type="email" name="email" placeholder="Email"  required  style="height: 20px;margin-left: 10px;border-radius: 5px;"></td>
-            </tr>
-        </table></p>
-        <br>
-        <label> <b>Observații</b></label> <br>
-        <input type="text" name="mesaj" style="height:20px; width: 350px;border-radius: 5px;" placeholder="Observații">
-    
         
+        <a href="./desprenoi.html">Despre noi</a>
+        
+        <a href="./contactusatest.html">Contact </a>
+        <a href="./harta.html">Harta</a>
+        </div>
     </div>
-    <br>
-    <button type="submit">Send</button>
+
+
+    <div class="contact3">
+    <form 
+    method="POST" 
+    action=" https://script.google.com/macros/s/AKfycbx52_xzP7TrDq76gigQ_Z8fi5r1EtIZUUV6upE9ZqNrxAa2mkZLWO_0CadEyai5nz59GQ/exec"
+  >
+  <h1 style="text-align: center">Contactează-ne</h1>
+  <br />
+  <div class="cont1">
+    <h3>Nume</h3>
+    <h3>Prenume</h3>
+  </div>
+  <div class="cont2">
+    <input class="sty" name="Nume" type="text" placeholder="Nume" required/>
+    <input class="sty" name="Prenume" type="text" placeholder="Prenume" required/>
+  </div>
+  <div class="cont3">
+    <h3>Email</h3>
+    <h3>Nr.Telefon</h3>
+  </div>
+  <div class="cont4">
+    <input class="sty" name="Email" type="email" placeholder="Email" required/>
+    <input class="sty" name="Nr.Telefon" type="tel" placeholder="Nr.Telefon" required/>
+  </div>
+  <div class="cont5">
+    <h3>Oraș</h3>
+    <h3>Observații</h3>
+  </div>
+  <div class="cont6">
+    <input class="sty" name="Oraș" type="text" placeholder="Oraș" required/>
+    <input class="sty" name="Observații" type="text" placeholder="Observații"/>
+  </div>
+
+  <br /><br />
+  <button class="button" type="submit">Send</button>
   </form>
-  
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwumyVQs_vvPP4siAOKjK_gxMiNcg9sKrRBpPFr9MS6Hs6OY4PPS8afqfaEad2-0VP5/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+</div>
+
+
+
+<footer>
+    <div class="footerdiv">
+        <div class="footerstanga">
+            <img src="/logogs.jpg" alt="Grip & Speed">
+        </div>
+        <div class="footercentru">
+            <h2>Grip & Speed</h2>
+            <div class="footerlink">
+                <a href="./homeatest.html">Acasă</a>
+                <a href="./produse.html">Produse</a> 
+                <a href="./desprenoi.html">Despre noi</a> 
+                <a href="./contactusatest.html">Contact</a>
+                <a href="./harta.html">Hartă</a> 
+            </div>
+        </div>
+        <div>
+            <h3>Follow us</h3>
+            <p>Facebook - Grip&Speed </p>
+            <p>Twitter - GripAndSpeed</p>
+            <p>Instagram - Grip&_Speed</p>
+            <p>YouTube - Grip&Speed</p>
+          </div>
+        </div>
+        </div>
+        <br>
+        <p class="footer-text" > <b>© 2025 Grip & Speed România. Protectia Datelor. Privacy Policy.</b></p>
+    </div>
+</footer>     
     
     
 
