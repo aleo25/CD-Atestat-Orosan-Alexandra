@@ -2,10 +2,10 @@
 .rand1{
     display: flex;
     flex:1;
-    gap:35px;
+    gap:33px;
     text-align: left;
     letter-spacing: 2px;
-    margin-left: 90px;
+    margin-left: 100px;
     margin-right: 20px;
     margin-top: 40px;
 }
@@ -20,10 +20,10 @@
 .rand3{
     display: flex;
     flex:1;
-    gap:35px;
+    gap:33px;
     text-align: left;
     letter-spacing: 2px;
-    margin-left: 90px;
+    margin-left: 100px;
     margin-right: 20px;
 }
 .rand4{
@@ -79,10 +79,10 @@
 .rand5{
     display: flex;
     flex:1;
-    gap:35px;
+    gap:33px;
     text-align: left;
     letter-spacing: 2px;
-    margin-left: 90px;
+    margin-left: 100px;
     margin-right: 20px;
 }
 footer {
