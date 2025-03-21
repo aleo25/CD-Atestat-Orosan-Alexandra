@@ -48,6 +48,9 @@
     color: black;
 }
 .produs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 300px;
     background-color:rgb(0, 0, 0) ;
     padding: 15px;
