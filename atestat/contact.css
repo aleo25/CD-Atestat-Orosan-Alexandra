@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 1500px;
+    width: 650px;
     min-height: 500px;
     margin: 40px auto;
     padding: 20px;
@@ -31,7 +31,7 @@
     text-align: center;
 }
 .button {
-    background: #3a2d79;
+    background: #a30909;
     color: white;
     border: none;
     padding: 10px;
@@ -40,32 +40,43 @@
     font-size: 16px;
 }
 .button:hover {
-    background: #302f64;
+    background: #cc1f1f;
 }
 .sty {
-    background-color: #1e1647;
+    background-color:#271818;
     color: white;
-    border: 2px solid #3a2d79;
+    border: 2px solid #443030;
     height: 30px;
-    width: 1500px;
+    width: 800px;
+    border-radius: 2px;
 }
-.cont1, .cont3, .cont5 {
+.cont1{
     display: flex;
     flex: 1;
-    gap: 725px;
+    gap: 280px;
 }
 .cont2, .cont4 {
     display: flex;
     flex: 1;
-    gap: 30px;
+    gap: 10px;
 }
 .cont6 {
     display: flex;
     flex: 1;
-    gap: 30px;
+    gap: 10px;
 }
 .cont7 {
     display: flex;
     flex: 1;
-    gap: 575px;
+    gap: 45px;
+}
+.cont3{
+    display: flex;
+    flex:1;
+    gap:285px;
+}
+.cont5 {
+    display: flex;
+    flex:1;
+    gap:290px;
 }

@@ -1,48 +1,52 @@
 body::-webkit-scrollbar{
     display: none;
 }
-
-body{
+body {
     margin: 0;
     padding: 0;
-    background-color:#282628;
-    color:white;
+    background-color: #282628;
+    color: white;
 }
-.nav{
-    display:flex;
+
+/* Navbar Styling */
+.nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#070707;
-    padding: 30px;
-    height: 10px;
-    color:white;
+    background-color: #070707;
+    padding: 15px 50px; /* Adjusted padding */
+    height: auto;
+}
 
-}
-.nav-container{
+/* Navbar Links */
+.link1, .link2 {
     display: flex;
-    width: 100%;
-    align-items: center;
+    gap: 30px; /* More space between links */
 }
-.link{
-    flex:1;
+
+.link {
+    flex: 1;
     display: flex;
     justify-content: center;
-    
 }
-.link1{
-    flex:1;
-    display: flex;
-   
-    gap:20px;
 
+/* Logo Styling */
+.logo {
+    height: 75px;
+    width: 130px;
 }
-.link2{
-    flex:1;
-    display: flex;
-   justify-content: end;
-    gap:20px;
-}
-.a{
+
+/* Navbar Links */
+.nav a {
     text-decoration: none;
-    color:black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
+
+/* Hover Effect */
+.nav a:hover {
+    color:  #a30909;
+}
+

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="produseupdated.css">
+
+
+
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="footer.css">
 
@@ -18,6 +20,47 @@
 
 <link rel="stylesheet" href="font.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+ .produse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.produs {
+    background-color: #111;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    letter-spacing: 3px;
+}
+
+.produs:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Fixed height for all images */
+.produs img{
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensures uniform size without stretching */
+    border-radius: 2px;
+}
+
+
+
+</style>
 <body>
     <div class="nav">
         <div class="link1">
@@ -36,49 +79,65 @@
         </div>
     </div>
     
-
     <div class="produse">
         <div class="produs">
-            <a href="./volane&pedale.html"><img src="/volan&pedale.jpg"></a>
-            <p >Volane & Pedale</p>
-            <a href="#" style="align-content: center;">Add to cart</a>
+            <a href="./volane&pedale.html">
+                <img src="/volan&pedale.jpg" alt="Volane & Pedale">
+            </a>
+            <h2>Volane & Pedale</h2>
         </div>
+    
         <div class="produs">
-            <a href=" "><img src="/volan2.webp"></a>
-            <p class="volan">FX Pro Steering Wheel</p>
-            <a href="#" ><button>Add to cart</button></a>
+            <a href="./cockpituri.html">
+                <img src="/cockpit&suporturi.jpg" alt="Cockpit-uri & Suporturi">
+            </a>
+            <h2>Cockpit-uri & Suporturi</h2>
         </div>
+    
         <div class="produs">
-            <a href=" "><img src="/volan3.webp"></a>
-            <p class="volan">Simagic GTC-C Leather</p>
-            <a href="#" ><button>Add to cart</button></a>
+            <a href="./scauneracing.html">
+                <img src="/scaunracing.jpg" alt="Scaune racing">
+            </a>
+            <h2>Scaune racing</h2>
         </div>
+    
         <div class="produs">
-           <a href="volan4.html"><img src="/volan4.webp"></a>
-           <p class="volan">Simagic GT Pro Hub(K) D-Shape Leather</p>
-           <a href="#" ><button>Add to cart</button></a>
+            <a href="./schimbatoare.html">
+                <img src="/shiftere.jpg" alt="Schimbatoare & Frâne de mână">
+            </a>
+            <h2>Schimbatoare & Frâne de mână</h2>
         </div>
+    
         <div class="produs">
-            <a href="./pedale1.html"><img src="/pedale1.webp"></a>
-            <p class="volan">Simagic P2000 S200 Hydraulic</p>
-            <a href="#" ><button>Add to cart</button></a>
-         </div>
-         <div class="produs">
-            <a href="./pedale2.html"><img src="/pedale2.webp"></a>
-            <p  class="volan">Simagic P1000i Inverted</p>
-            <a href="#" ><button>Add to cart</button></a>
-         </div>
-         <div class="produs">
-            <a href="./pedale3.html"><img src="/pedale3.webp"></a>
-            <p  class="volan" >Asetek Forte S-Series Brake & Throttle</p>
-            <a href="#" ><button>Add to cart</button></a>
-         </div>
-         <div class="produs">
-            <a href="./pedale4.html"><img src="/pedale4.webp"></a>
-            <p class="volan" >Simagic P1000</p>
-            <a href="#" ><button>Add to cart</button></a>
-         </div>
+            <a href="./simdash.html">
+                <img src="/simdash.jpg" alt="Sim dash & HUD's">
+            </a>
+            <h2>Sim dash & HUD's</h2>
+        </div>
+    
+        <div class="produs">
+            <a href="./monitoare.html">
+                <img src="/bundels.webp" alt="Monitoare & Ultrawide setup's">
+            </a>
+            <h2>Monitoare & Ultrawide setup's</h2>
+        </div>
+    
+        <div class="produs">
+            <a href="./acesorii.html">
+                <img src="/acesorii.webp" alt="Acesorii">
+            </a>
+            <h2>Acesorii</h2>
+        </div>
+    
+        <div class="produs">
+            <a href="./bundles.html">
+                <img src="/monitor.jpg" alt="Bundles">
+            </a>
+            <h2>Bundles</h2>
+        </div>
     </div>
+    
+    
 
 
 

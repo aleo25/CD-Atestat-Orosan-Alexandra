@@ -22,6 +22,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin: 40px;
+    
 }
 
 .rand1{
@@ -87,4 +88,7 @@
 }
 .a:active{
     color: black;
+}
+.volan{
+    text-align: center;
 }

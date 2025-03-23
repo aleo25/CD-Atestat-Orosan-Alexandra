@@ -6,7 +6,6 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="navbar.css">
-<link rel="stylesheet" href="poduse.css">
 <link rel="stylesheet" href="footer.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +19,78 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+<style>
+    /* Container for all products */
+    .produse {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adjusted for 4 items per row */
+        gap: 30px; /* Reduced gap between items */
+        padding: 20px;
+        max-width:1300px;
+        margin: auto;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+    
+    /* Individual product card */
+    .produs {
+        background-color: #111;
+        border-radius: 5px;
+        padding:20px;
+        text-align: center;
+        width: 20%; /* Adjusted to fit 4 items per row */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    
+    /* Hover effect */
+    .produs:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Consistent image size */
+    .produs img {
+        width: 100%;
+        height: 250px; /* Increased height for bigger images */
+        object-fit: cover; /* Keeps the image proportional */
+        border-radius: 2px;
+    }
+    
+    /* Product title */
+    .produs p {
+        color: white;
+        font-size: 20px; /* Increased font size for better readability */
+        margin: 15px 0;
+        font-weight: bold;
+    }
+    
+    /* Add to Cart Button */
+    .produs a button {
+        background-color:#a30909;
+        color: white;
+        border: none;
+        padding: 12px 24px; /* Increased padding for bigger button */
+        border-radius: 5px;
+        font-size: 18px; /* Increased font size */
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .produs a button:hover {
+        background-color:#cc1f1f;
+    }
+    
+    
+    </style>
 <body>
     <div class="nav">
         <div class="link1">
         <a href="./atestat.html"> Acasa</a>
-        <a href="./produse.html">Produse</a>
+        <a href="./produseupdated.html">Produse</a>
         </div>
         <div class="link">
             <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
@@ -38,6 +104,50 @@
         </div>
     </div>
     
+    <div class="produse">
+        <div class="produs">
+            <a href="./acesoriu5.html"><img src="/acesoriu5.webp"></a>
+            <p class="volan">Simucube Quick Release</p><br>
+            <a href="#" ><button>Add to cart</button></a>
+         </div>
+         <div class="produs">
+            <a href="./acesoriu6.html"><img src="/acesoriu6.webp"></a>
+            <p  class="volan">Simagic P-SFP Standard Flat Pedal Plate</p><br>
+            <a href="#" ><button>Add to cart</button></a>
+         </div>
+         <div class="produs">
+            <a href="./acesoriu7.html"><img src="/acesoriu7.webp"></a>
+            <p  class="volan" >Asetek Forte S-Series Brake & Throttle</p><br>
+            <a href="#" ><button>Add to cart</button></a>
+         </div>
+         <div class="produs">
+            <a href="./acesoriu8.html"><img src="/acesoriu8.webp"></a>
+            <p class="volan" >Asetek XL Handles</p> <br><br>
+            <a href="#" ><button>Add to cart</button></a>
+         </div>
+        <div class="produs">
+            <a href="./acesoriu1.html"><img src="/acesoriu1.webp"></a>
+            <p class="volan">Simagic P-HTS Hydraulic Throttle System for P1000</p> <br>
+            <a href="#" style="align-content: center;"><button>Add to cart</button></a>
+        </div>
+        <div class="produs">
+            <a href="./acesoriu2.html"><img src="/acesoriu2.webp"></a>
+            <p class="volan">MOZA Performance Kit for CRP2</p> <br><br>
+            <a href="#" ><button>Add to cart</button></a>
+        </div>
+        <div class="produs">
+            <a href="./acesoriu3.html"><img src="/acesoriu3.webp"></a>
+            <p class="volan">Simagic P-STP Kill Switch</p><br><br>
+            <a href="#" ><button>Add to cart</button></a>
+        </div>
+        <div class="produs">
+           <a href="acesoriu4.html"><img src="/acesorii4.webp"></a>
+           <p class="volan">Simagic P-E114 WheelBase CAN Extender</p><br>
+           <a href="#" ><button>Add to cart</button></a>
+        </div>
+        
+        
+    </div>
 
   
 
@@ -54,7 +164,7 @@
                 <h2>Grip & Speed</h2>
                 <div class="footer-links">
                     <a href="./atestat.html">Acasă</a>
-                    <a href="./produse.html">Produse</a>
+                    <a href="./produseupdated.html">Produse</a>
                     <a href="./desprenoi.html">Despre noi</a>
                     <a href="./contactusatest.html">Contact</a>
                     <a href="./harta.html">Hartă</a>
