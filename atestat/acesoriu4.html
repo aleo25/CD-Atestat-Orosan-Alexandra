@@ -22,21 +22,22 @@
 <body>
     <div class="nav">
         <div class="link1">
-        <a href="./atestat.html"> Acasa</a>
-        <a href="./produseupdated.html">Produse</a>
+            <a href="./cos.html">Coș</a>
+         <a href="./produseupdated.html">Produse</a>
+         
         </div>
         <div class="link">
             <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
         </div> 
         <div class="link2">
-        
+        <a href="./atestat.html"> Acasa</a>
         <a href="./desprenoi.html">Despre noi</a>
         
         <a href="./contactusatest.html"> Contact</a>
         <a href="./harta.html">Harta</a>
+        
         </div>
     </div>
-    
   
     
         <div class="product-container">
@@ -59,7 +60,7 @@ Simultaneously Connects Multiple SIMAGIC Devices: Pedals, Sequential Shifters, H
                 <input type="number" id="quantity" value="1" min="1">
                 <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
             </div>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart"  onclick="addToCart({ id: 'acesoriu4', name: 'Simagic P-E114 WheelBase CAN Extender', price: 20.11 })">Add to Cart</button>
             </div>
         </div>
     
@@ -123,5 +124,6 @@ function changeQuantity(amount) {
 
     <p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
 </footer>
+<script src="./script.js"></script>
 </body>
 </html>

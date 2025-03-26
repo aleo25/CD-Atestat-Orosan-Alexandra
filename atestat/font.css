@@ -5,7 +5,7 @@
     font-weight:400;
     font-style: normal;
 }
-.container, .h2, .nav, .product-details h1{
+.container, .h2, .nav, .product-details h1, .client{
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight:400;
@@ -17,7 +17,7 @@
     font-weight:400;
     font-style: normal;
   }
-  .container1, .container3, .rand1, .fontp{
+  .container1, .container3, .rand1, .fontp, .quote{
         font-family: "Lato", serif;
         font-weight: 400;
         font-style: normal;
