@@ -1,5 +1,5 @@
 
-.h1, .harta, .prod{
+.h1, .harta, .prod, .h1h {
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight:400;
@@ -11,13 +11,13 @@
     font-weight:400;
     font-style: normal;
   }
-  .container2, .footer1{
+  .container2, .footer1, .fontabout{
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight:400;
     font-style: normal;
   }
-  .container1, .container3, .rand1{
+  .container1, .container3, .rand1, .fontp{
         font-family: "Lato", serif;
         font-weight: 400;
         font-style: normal;

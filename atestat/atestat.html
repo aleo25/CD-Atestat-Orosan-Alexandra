@@ -21,10 +21,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-   
+   body{
+    background-color:  #1a1a1a;
+   }
 .swiper-slide img {
-    
-    
+    margin-top: 40px;
+    margin-bottom: 40px;
     transition: transform 0.3s;
 }
 .swiper-slide img:hover {
@@ -40,11 +42,13 @@
 
 .video-section {
     position: relative;
-    width: 100%;  /* Set width as needed */
-    height: 600px; /* Adjust height */
-    
-    border-radius: 10px; /* Optional: rounded corners */
+    width: 88%;  /* Set width as needed */
+    height: 700px; /* Adjust height */
+   
+    border-radius: 2px; /* Optional: rounded corners */
     overflow: hidden; /* Prevents overflow */
+   border-left: 100px solid rgb(0, 0, 0);
+   border-right: 105px solid rgb(0, 0, 0);
 }
 
 .video {
@@ -86,6 +90,79 @@
     transform: scale(1.1);
 }
 
+
+    /* Testimonials Section */
+    .testimonials {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Title */
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Testimonial Cards Container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Testimonial Card */
+.testimonial-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Customer Image */
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ff6600;
+}
+
+/* Quote Text */
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Customer Name */
+.testimonial-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color:#d41313;
+    margin-bottom: 5px;
+}
+
+/* Star Rating */
+.rating {
+    font-size: 18px;
+    color: #f5e37e;
+}
+
+ 
+
 </style>
 <body>
     <div class="nav">
@@ -107,7 +184,7 @@
 
     <div class="video-section">
         <video autoplay muted loop class="video">
-            <source src="/videoplayback.mp4" type="video/mp4">
+            <source src="/WhatsApp Video 2025-03-25 at 15.40.04.mp4" type="video/mp4">
         </video>
         <div class="text-overlay">
             <h2>Echipamentul nostru în acțiune!</h2>
@@ -115,26 +192,58 @@
             <a href="./produse.html"><button>Shop Now</button></a>
         </div>
     </div>
-    
 
 
+<p style="background-color: #222;"> informatii</p>
 
 
-    <br><br>
     <div class="product-carousel">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="/volan&pedale.jpg" alt="Volan" width="400px" height="300px"></div>
-                <div class="swiper-slide"><img src="/cockpit&suporturi.jpg" alt="cockpit" width="400px" height="300px"></div>
-                <div class="swiper-slide"><img src="/scaunracing.jpg" alt="scaun" width="400px" height="300px"></div>
+                <div class="swiper-slide"><img src="/homq1.jpg" alt="Volan" width="400px" height="300px"></div>
+                <div class="swiper-slide"><img src="/home2.jpg" alt="cockpit" width="400px" height="300px"></div>
+                <div class="swiper-slide"><img src="/home3.jpg" alt="scaun" width="400px" height="300px"></div>
             </div>
         </div>
     </div>
 
+<p style="background-color: #222;">informatii</p>
+
+    
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+        
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <h3>Customer 1</h3>
+                <p class="quote">"The best racing cockpit I've ever used! Super stable and easy to set up."</p>
+                <h4>Alex Johnson</h4>
+                <span class="rating">★★★★★</span>
+            </div>
+    
+            <div class="testimonial-card">
+                <h3>Customer 2</h3>
+                <p class="quote">"Great customer service and fast delivery. Highly recommend!"</p>
+                <h4>Maria Lopez</h4>
+                <span class="rating">★★★★★</span>
+            </div>
+    
+            <div class="testimonial-card">
+                <h3>Customer 3</h3>
+                <p class="quote">"Fantastic build quality and works perfectly with my setup!"</p>
+                <h4>Daniel Smith</h4>
+                <span class="rating">★★★★★</span>
+            </div>
+        </div>
+    </div>
+   
+    
+
+
 
   
 
-<br><br><br><br><br><br>
+
     <footer>
         <div class="footer-container">
             <div class="footer-left">
