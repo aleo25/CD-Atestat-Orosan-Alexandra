@@ -7,8 +7,9 @@
 </head>
 
 <link rel="stylesheet" href="navbar.css">
-<link rel="stylesheet" href="poduse.css">
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="poduse.css">
+<link rel="stylesheet" href="atestat.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,224 +17,35 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="font.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<style>
-   body{
-    background-color:  #111;
-   }
-.swiper-slide img {
-    margin-top: 70px;
-    margin-bottom: 10px;
-    transition: transform 0.3s;
-}
-.swiper-slide img:hover {
-    transform: scale(1.1);
-}
-.swiper-wrapper{
-    display: flex;
-    flex:1;
-    gap:30px;
-    justify-content: center;
-}
-
-
-.video-section {
-    position: relative;
-    width: 100%;  /* Set width as needed */
-    height: 750px; /* Adjust height */
-   
-    border-radius: 2px; /* Optional: rounded corners */
-    overflow: hidden; /* Prevents overflow */
-
-}
-
-.video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Makes sure video fills the section properly */
-}
-
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    
-}
-
-.text-overlay h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.text-overlay button {
-    background: #111;
-    border-radius: 3px;
-    padding: 25px 30px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    color:rgb(255, 255, 255);
-    font-size: 30px;
-    margin-top: 400px;
-    box-shadow: 20px 20px 20px rgb(0, 0, 0);
-}
-
-.text-overlay button:hover {
-    transform: scale(1.1);
-}
-
-
-    /* Testimonials Section */
-    .testimonials {
-    text-align: center;
-    background-color: #111;
-    padding: 60px 20px;
-    color: white;
-}
-
-/* Title */
-.testimonials h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-/* Testimonial Cards Container */
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-
-}
-
-/* Individual Testimonial Card */
-.testimonial-card {
-    background: #222;
-    padding: 20px;
-    border-radius: 12px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-}
-
-/* Hover Effect */
-.testimonial-card:hover {
-    transform: scale(1.05);
-}
-
-
-/* Quote Text */
-.quote {
-    font-size: 16px;
-    font-style: italic;
-    margin-bottom: 10px;
-    color: #ddd;
-}
-
-/* Customer Name */
-.testimonial-card h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color:#d41313;
-    margin-bottom: 5px;
-}
-
-/* Star Rating */
-.rating {
-    font-size: 18px;
-    color: #ddd;
-}
-
- 
-.scris1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width:950px;
-    min-height: 300px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    margin-bottom: 80px;
-    margin-top: 80px;
-    
-
-}
-.scris11 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    width:1700px;
-    height: 400px;
-    padding: 40px;
-    background: #1e1e1e;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    margin-bottom: 10px;
-    margin-top: 80px;
-    
-
-}
-.h2{
-   
-   margin-left:80px ;
-   margin-right: 60px;
-   letter-spacing: 2px;
-   font-size: 35px;
-}
-.p{
-   line-height: 1.4;
-   margin-left: 40px;
-   margin-right: 40px;
-   gap:130px;
-   font-size: 18px;
-   margin-bottom: 20px;
-}
-
-</style>
 <body>
-    <div class="nav">
-        <div class="link1">
-            <a href="./cos.html">Coș</a>
-         <a href="./produseupdated.html">Produse</a>
-         
-        </div>
-        <div class="link">
-            <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
-        </div> 
-        <div class="link2">
+<div class="nav">
+    <div class="link1">
+        <a href="./cos.html">Coș</a>
+        <a href="./produseupdated.html">Produse</a>
+    </div>
+    <div class="link">
+        <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
+    </div> 
+    <div class="link2">
         <a href="./atestat.html"> Acasa</a>
         <a href="./desprenoi.html">Despre noi</a>
-        
         <a href="./contactusatest.html"> Contact</a>
         <a href="./harta.html">Harta</a>
-        
-        </div>
     </div>
+</div>
 
-    <div class="video-section">
-        <video autoplay muted loop class="video">
-            <source src="/videofinalsperrr.mp4" type="video/mp4">
-        </video>
-        <div class="text-overlay">
-            
-            <a href="./produseupdated.html"><button>Shop Now</button></a>
-        </div>
+<div class="video-section">
+    <video autoplay muted loop class="video">
+    <source src="/videofinalsperrr.mp4" type="video/mp4">
+    </video>
+    <div class="text-overlay">
+        <a href="./produseupdated.html"><button>Shop Now</button></a>
     </div>
-
-    <div class="scris1" style="text-align: center;margin-bottom: 50px;margin-top: 70px;">
+    </div>
+    <div class="scris1" style="text-align: center;margin-bottom:100px;margin-top: 70px;">
         <h2 class="h2" style="color:#a30909;">Grip & Speed - Pasionează-te de curse virtuale la cel mai înalt nivel!</h2> 
         <p class="p">Grip & Speed este destinația ideală pentru toți pasionații de sim racing. <br> Încă din 2014, ne-am dedicat furnizării celor mai performante echipamente pentru simulatoare auto, aducând realism și adrenalină în fiecare cursă virtuală. 
             Echipamentele noastre te vor ajuta să atingi precizie maximă, control absolut și o experiență autentică de curse, indiferent de nivelul de performanță atins. <br>
@@ -241,8 +53,7 @@
             Livrăm oriunde în România și UE! <br>
             Contact:  contact@gripandspeed.com
         </p></div>
-
-        <div class="scris11">
+    <div class="scris11">
     <div class="product-carousel" style="margin-bottom: 60px; gap:30px">
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -255,8 +66,7 @@
 </div>
     
     <div class="testimonials">
-        <h2 class="client" style="letter-spacing: 3px;">Review-uri de la clienții noștrii!</h2>
-        
+        <h2 class="client" style="letter-spacing: 3px;color: #a30909;;">Review-uri de la clienții noștrii!</h2>
         <div class="testimonial-container">
             <div class="testimonial-card">
                 <h3 class="client" style="font-size: 23px;letter-spacing: 2px;">Client 1</h3>
@@ -264,14 +74,12 @@
                 <h4 class="client" style="letter-spacing: 2px;">Alex Johnson</h4>
                 <span class="rating">★★★★★</span>
             </div>
-    
             <div class="testimonial-card">
                 <h3 class="client" style="font-size: 23px;letter-spacing: 2px;">Client 2</h3>
                 <p class="quote">"Serviciu clienți excelent și livrare rapidă. Recomand cu încredere!"</p>
                 <h4 class="client" style="letter-spacing:2px;">Maria Lopez</h4>
                 <span class="rating">★★★★★</span>
             </div>
-    
             <div class="testimonial-card">
                 <h3 class="client" style="font-size: 23px;letter-spacing: 2px;">Client 3</h3>
                 <p class="quote" >"Calitate de construcție fantastică și funcționează perfect cu configurația mea!"</p>
@@ -293,46 +101,32 @@
         </div>
     </div>
    
-    
-
-
-
-  
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-left">
-                <img src="/logogs.jpg" alt="Grip & Speed">
-            </div>
-    
-            <div class="footer-center">
-                <h2>Grip & Speed</h2>
-                <div class="footer-links">
-                    <a href="./atestat.html">Acasă</a>
-                    <a href="./produseupdated.html">Produse</a>
-                    <a href="./desprenoi.html">Despre noi</a>
-                    <a href="./contactusatest.html">Contact</a>
-                    <a href="./harta.html">Hartă</a>
-                </div>
-            </div>
-    
-            <div class="footer-right">
-                <h3>Follow us</h3>
-                <div class="social-icons">
-                    <a href="https://facebook.com" ><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    
-        <p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
-    </footer>
-         
-    
-
-
+<footer>
+<div class="footer-container">
+    <div class="footer-left">
+        <img src="/logogs.jpg" alt="Grip & Speed">
+    </div>
+    <div class="footer-center">
+    <h2>Grip & Speed</h2>
+    <div class="footer-links">
+        <a href="./atestat.html">Acasă</a>
+        <a href="./produseupdated.html">Produse</a>
+        <a href="./desprenoi.html">Despre noi</a>
+        <a href="./contactusatest.html">Contact</a>
+        <a href="./harta.html">Hartă</a>
+    </div>
+    </div>
+    <div class="footer-right">
+    <h3>Follow us</h3>
+    <div class="social-icons">
+        <a href="https://facebook.com" ><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+</div>
+<p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
+</footer>
 </body>
 </html>

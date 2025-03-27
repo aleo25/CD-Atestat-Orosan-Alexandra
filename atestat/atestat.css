@@ -1,0 +1,153 @@
+body{
+    background-color:  #111;
+   }
+.swiper-slide img {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+.swiper-slide img:hover {
+    transform: scale(1.1);
+}
+.swiper-wrapper{
+    display: flex;
+    flex:1;
+    gap:30px;
+    justify-content: center;
+}
+.video-section {
+    position: relative;
+    width: 100%; 
+    height: 750px; 
+    border-radius: 2px;
+    overflow: hidden; 
+}
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.text-overlay h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.text-overlay button {
+    background: #111;
+    border-radius: 3px;
+    padding: 25px 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 400px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+}
+
+.text-overlay button:hover {
+    transform: scale(1.1);
+}
+/* Sectiune testimoniale*/
+    .testimonials {
+    text-align: center;
+    background-color: #111;
+    padding: 60px 20px;
+    color: white;
+}
+/* Titlu*/
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+/*Testimoniale container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+/*Card testimonial individual */
+.testimonial-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+/*Efect Hover  */
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+/* Quote Text */
+.quote {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+/* Client Nume */
+.testimonial-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color:#d40606;
+    margin-bottom: 5px;
+}
+/* Star Rating */
+.rating {
+    font-size: 18px;
+    color: #ddd;
+}
+.scris1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:950px;
+    min-height: 300px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.scris11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:1700px;
+    height: 400px;
+    padding: 40px;
+    background: #1e1e1e;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+.h2{
+   margin-left:80px ;
+   margin-right: 60px;
+   letter-spacing: 2px;
+   font-size: 35px;
+}
+.p{
+   line-height: 1.4;
+   margin-left: 40px;
+   margin-right: 40px;
+   gap:130px;
+   font-size: 18px;
+   margin-bottom: 20px;
+}
