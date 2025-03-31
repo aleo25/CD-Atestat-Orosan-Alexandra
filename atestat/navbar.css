@@ -7,37 +7,28 @@ body {
     background-color: #282628;
     color: white;
 }
-
-/* Navbar Styling */
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #070707;
-    padding: 15px 50px; /* Adjusted padding */
+    padding: 15px 50px; 
     height: auto;
 }
-
-/* Navbar Links */
 .link1, .link2 {
     display: flex;
-    gap: 30px; /* More space between links */
+    gap: 30px;
 }
-
 .link {
     flex: 1;
     display: flex;
     justify-content: center;
     margin-left: 240px;
 }
-
-/* Logo Styling */
 .logo {
     height: 75px;
     width: 130px;
 }
-
-/* Navbar Links */
 .nav a {
     text-decoration: none;
     color: white;
@@ -45,8 +36,6 @@ body {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
-/* Hover Effect */
 .nav a:hover {
     color:  #a30909;
 }

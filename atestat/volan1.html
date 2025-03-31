@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="produssingular.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,116 +15,100 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="font.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <body>
-    <div class="nav">
-        <div class="link1">
-            <a href="./cos.html">Coș</a>
-         <a href="./produseupdated.html">Produse</a>
-         
-        </div>
-        <div class="link">
-            <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
-        </div> 
-        <div class="link2">
+<div class="nav">
+    <div class="link1">
+        <a href="./cos.html">Coș</a>
+        <a href="./produseupdated.html">Produse</a>
+    </div>
+    <div class="link">
+        <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
+    </div> 
+    <div class="link2">
         <a href="./atestat.html"> Acasa</a>
         <a href="./desprenoi.html">Despre noi</a>
-        
         <a href="./contactusatest.html"> Contact</a>
         <a href="./harta.html">Harta</a>
-        
-        </div>
+    </div>
     </div>
     
-  
+<div class="product-container">
+    <div class="product-images">
+        <img id="main-image" src="/volan1.webp" style="height: 500px;width: 500px;">
+    <div class="thumbnails">
+        <img src="/volan1.webp" class="thumb active" onclick="changeImage('/volan1.webp')" >
+        <img src="/volan1.1..webp" class="thumb" onclick="changeImage('/volan1.1..webp')"  >
+    </div>
+    </div>
+    <div class="product-details">
+    <h1>Simagic GT Pro Hub(K) Round Leather</h1>
+    <p class="price">€439.11</p>
+    <p class="description">
+        Volan din piele de înaltă calitate, conceput atât pentru sim raceri profesioniști, cât și pentru cei pasionați.  
+        Dispune de prinderi ergonomice, materiale durabile și compatibilitate perfectă cu cele mai importante setup-uri de racing.
+    </p>
+<!-- Quantity Selector -->
+<div class="quantity-container">
+    <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+    <input type="number" id="quantity" value="1" min="1">
+    <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+</div>
+    <button class="add-to-cart"  onclick="addToCart({ id: 'volan1', name: 'Simagic GT Pro Hub(K) Round Leather', price: 439.11 })">Add to Cart</button>
+</div>
+</div>
     
-        <div class="product-container">
-            <div class="product-images">
-                <img id="main-image" src="/volan1.webp" style="height: 500px;width: 500px;">
-                <div class="thumbnails">
-                    <img src="/volan1.webp" class="thumb active" onclick="changeImage('/volan1.webp')" >
-                    <img src="/volan1.1..webp" class="thumb" onclick="changeImage('/volan1.1..webp')"  >
-                </div>
-            </div>
-            <div class="product-details">
-                <h1>Simagic GT Pro Hub(K) Round Leather</h1>
-                <p class="price">€439.11</p>
-                <p class="description">
-                    High-quality leather steering wheel designed for professional and casual sim racers. 
-                    Features ergonomic grips, durable materials, and seamless compatibility with major racing setups.
-                </p>
-                <!-- Quantity Selector -->
-            <div class="quantity-container">
-                <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
-                <input type="number" id="quantity" value="1" min="1">
-                <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
-            </div>
-                <button class="add-to-cart"  onclick="addToCart({ id: 'volan1', name: 'Simagic GT Pro Hub(K) Round Leather', price: 439.11 })">Add to Cart</button>
-            </div>
-        </div>
-    
-    <script>
-     // Function to change main product image
+<script>
+    // Funcție pentru a schimba imaginea principală a produsului
 function changeImage(imageSrc) {
     document.getElementById("main-image").src = imageSrc;
-
-    // Remove active class from all thumbnails
+     //  Elimină clasa activă de la toate thumbnails-urile
     let thumbnails = document.querySelectorAll(".thumb");
     thumbnails.forEach(thumb => thumb.classList.remove("active"));
-
-    // Add active class to clicked thumbnail
+    // Adaugă clasa activă la thumbnail-ul selectat
     event.target.classList.add("active");
 }
-
-// Function to increase or decrease quantity
+    // Funcție pentru creșterea sau scăderea cantității
 function changeQuantity(amount) {
     let quantityInput = document.getElementById("quantity");
     let currentValue = parseInt(quantityInput.value);
-
-    // Ensure quantity doesn't go below 1
+    // Asigură că cantitatea nu scade sub 1
     if (currentValue + amount >= 1) {
         quantityInput.value = currentValue + amount;
     }
 }
+</script>
 
-    </script>
-  
-
-  
-
-
-  <footer>
-    <div class="footer-container">
-        <div class="footer-left">
-            <img src="/logogs.jpg" alt="Grip & Speed">
-        </div>
-
-        <div class="footer-center">
-            <h2>Grip & Speed</h2>
-            <div class="footer-links">
-                <a href="./atestat.html">Acasă</a>
-                <a href="./produseupdated.html">Produse</a>
-                <a href="./desprenoi.html">Despre noi</a>
-                <a href="./contactusatest.html">Contact</a>
-                <a href="./harta.html">Hartă</a>
-            </div>
-        </div>
-
-        <div class="footer-right">
-            <h3>Follow us</h3>
-            <div class="social-icons">
-                <a href="https://facebook.com" ><i class="fab fa-facebook"></i></a>
-                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
+<footer>
+<div class="footer-container">
+    <div class="footer-left">
+        <img src="/logogs.jpg" alt="Grip & Speed">
     </div>
-
-    <p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
+    <div class="footer-center">
+    <h2>Grip & Speed</h2>
+    <div class="footer-links">
+        <a href="./atestat.html">Acasă</a>
+        <a href="./produseupdated.html">Produse</a>
+        <a href="./desprenoi.html">Despre noi</a>
+        <a href="./contactusatest.html">Contact</a>
+        <a href="./harta.html">Hartă</a>
+    </div>
+    </div>
+    <div class="footer-right">
+    <h3>Follow us</h3>
+    <div class="social-icons">
+        <a href="https://facebook.com" ><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+</div>
+<p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
 </footer>
+
 <script src="./script.js"></script>
 </body>
 </html>
