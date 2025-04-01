@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="produssingular.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="font.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<body>
+<div class="nav">
+    <div class="link1">
+        <a href="./cos.html">Coș</a>
+        <a href="./produseupdated.html">Produse</a>
+    </div>
+    <div class="link">
+        <a href="./atestat.html" > <img src="/logogs.jpg" height="75px" width="130px"> </a>
+    </div> 
+    <div class="link2">
+        <a href="./atestat.html"> Acasa</a>
+        <a href="./desprenoi.html">Despre noi</a>
+        <a href="./contactusatest.html"> Contact</a>
+        <a href="./harta.html">Harta</a>
+        </div>
+    </div>
+    <div class="product-container">
+    <div class="product-images">
+        <img id="main-image" src="/bundle1.webp" style="height: 500px;width: 500px;">
+    <div class="thumbnails">
+        <img src="/bundle1.webp" class="thumb active" onclick="changeImage('/bundle1.webp')" >
+        <img src="/bundle1.1.webp" class="thumb" onclick="changeImage('/bundle1.1.webp')"  >
+        <img src="/bundle1.1.1.webp" class="thumb" onclick="changeImage('/bundle1.1.1.webp')"  >
+    </div>
+    </div>
+    <div class="product-details">
+    <h1>MOZA R3 Bundle for PC</h1>
+    <p class="price">€326.29</p>
+    <p class="description">
+        Pachetul MOZA R3 Racing oferă o experiență de simulare a curselor fără egal, meticulos conceput pentru PC.
+        Baza R3 și pedalele sunt fabricate din aluminiu de calitate aeronautică și oțel de înaltă rezistență.
+        Cu un design elegant și compact, R3 se adaptează cu ușurință oricărei configurații, de la birouri la rig-uri de
+        curse complete. Această bază stilizată, cu un design în formă de X, asigură o răcire eficientă,
+        fiind ideală pentru sesiuni de joc prelungite.
+    </p>
+<!-- Quantity Selector -->
+<div class="quantity-container">
+    <button class="quantity-btn" onclick="changeQuantity(-1)">-</button>
+    <input type="number" id="quantity" value="1" min="1">
+    <button class="quantity-btn" onclick="changeQuantity(1)">+</button>
+</div>
+    <button class="add-to-cart"  onclick="addToCart({ id: 'bundle1', name: 'MOZA R3 Bundle for PC', price:326.29 })">Add to Cart</button>
+</div>
+</div>
+    
+<script>
+    // Funcție pentru a schimba imaginea principală a produsului
+function changeImage(imageSrc) {
+    document.getElementById("main-image").src = imageSrc;
+     //  Elimină clasa activă de la toate thumbnails-urile
+    let thumbnails = document.querySelectorAll(".thumb");
+    thumbnails.forEach(thumb => thumb.classList.remove("active"));
+    // Adaugă clasa activă la thumbnail-ul selectat
+    event.target.classList.add("active");
+}
+    // Funcție pentru creșterea sau scăderea cantității
+function changeQuantity(amount) {
+    let quantityInput = document.getElementById("quantity");
+    let currentValue = parseInt(quantityInput.value);
+    // Asigură că cantitatea nu scade sub 1
+    if (currentValue + amount >= 1) {
+        quantityInput.value = currentValue + amount;
+    }
+}
+</script>
+
+<footer>
+<div class="footer-container">
+    <div class="footer-left">
+        <img src="/logogs.jpg" alt="Grip & Speed">
+    </div>
+    <div class="footer-center">
+    <h2>Grip & Speed</h2>
+    <div class="footer-links">
+        <a href="./atestat.html">Acasă</a>
+        <a href="./produseupdated.html">Produse</a>
+        <a href="./desprenoi.html">Despre noi</a>
+        <a href="./contactusatest.html">Contact</a>
+        <a href="./harta.html">Hartă</a>
+    </div>
+    </div>
+    <div class="footer-right">
+    <h3>Follow us</h3>
+    <div class="social-icons">
+        <a href="https://facebook.com" ><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+</div>
+<p class="footer-text">© 2025 Grip & Speed România | Protectia Datelor | Privacy Policy</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
